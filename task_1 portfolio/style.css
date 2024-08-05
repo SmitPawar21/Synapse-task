@@ -24,6 +24,7 @@ header {
     height: 20vh;
     top: 0vh;
     z-index: 50;
+    box-sizing: border-box;
 }
 
 nav ul {
@@ -68,9 +69,10 @@ section {
     top: 20vh;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-end;
     align-items: center;
     text-align: center;
+    box-sizing: border-box;
 }
 #home h1
 {
@@ -80,29 +82,253 @@ section {
 #home p
 {
     font-size: 2vw;
-
+    text-align: left;
+}
+#home .code
+{
+    margin-top: 8vh;
+    background-color: #333333bc;
+    box-sizing: border-box;
+    padding: 3.5vh 10vw;
+    border: none;
+    border-radius: 10px;
 }
 #about
 {
     position: absolute;
     top: 120vh;
+    position: relative;
 }
+
+.my_image
+{
+    width: 30vw;
+    height: 70vh;
+    /* border: 2px solid red; */
+    background-image: url(./images/myImage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    bottom: 8vh;
+    left: 2vw;
+}
+
+.about_para
+{
+    width: 60vw;
+    height: 70vh;
+    position: absolute;
+    bottom: 8vh;
+    right: 2vw;
+    /* border: 1px solid red; */
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.about_para:hover
+{
+    background-color: rgba(0, 0, 0, 0.663);
+}
+
 #projects
 {
     position: absolute;
     top: 220vh;
 }
+#projects h2
+{
+    width: 100%;
+    position: absolute;
+    top: 25vh;
+    display: flex;
+    justify-content: center;
+}
+#projects .card_area
+{
+    position: absolute;
+    bottom: 5vh;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+}
+.card_area .card
+{
+    width: 24%;
+    height: 100%;
+    box-sizing: border-box;
+}
+#project1
+{
+    background-image: url(./images/Screenshot\ \(77\).png);
+    background-position: left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project2
+{
+    background-image: url(./images/Screenshot\ \(83\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project3
+{
+    background-image: url(./images/Screenshot\ \(94\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#project4
+{
+    background-image: url(./images/Screenshot\ \(95\).png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card p
+{
+    width: 100%;
+    height: 100%;
+    font-size: 1.5vw;
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(32, 32, 32, 0.837);
+    transition: all 0.4s ease-in;
+    cursor: pointer;
+}
+.card p:hover
+{
+    opacity: 1;
+}
+
 #skills
 {
     position: absolute;
     top: 320vh;
+    min-height: 100vh;
 }
+#skills h2
+{
+    position: absolute;
+    top: 25vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+#skills .tech_skill
+{
+    position: absolute;
+    top: 35vh;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tech_skill .skill_area
+{
+    width: 100%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.skill_area .skill
+{
+    width: 14%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+/* .skill img
+{
+    
+} */
+.skill .image_c
+{
+    width: 100%;
+    height: 80%;
+}
+
 #contact
 {
     position: absolute;
     top: 420vh;
+    display: flex;
+    justify-content: center;
 }
 
+#contact h3
+{
+    position: absolute;
+    top: 30vh;
+}
+
+.contact_area
+{
+    position: absolute;
+    top: 40vh;
+    width: 50%;
+    height: 50%;
+    background:black;
+    background:rgba(0,0,0,0.8);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+    padding: 3vh;
+}
+.contact_area .element
+{
+    width: 100%;
+    height: 20%;
+    /* border: 2px solid red; */
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+}
+.contact_area .input_box
+{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.input_box textarea
+{
+    border: none;
+    outline: none;
+    background-color: #33333374;
+    color: white;
+    box-sizing: border-box;
+    padding: 2vh;
+}
+.input_box button
+{
+    padding: 13px 30px;
+    background-color: green;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.30s ease;
+}
+.input_box button:hover
+{
+    background-color: rgb(0, 128, 119);
+
+}
 .project {
     margin-bottom: 1rem;
 }
