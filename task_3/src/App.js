@@ -2,6 +2,10 @@ import './App.css';
 import logo from "./images/mobilelo 2.png";
 import image1 from "./images/image 16.png";
 import {Section_2} from "./Section_2";
+import {Companies} from "./Companies";
+import {Section_3} from "./Section_3";
+import { Section_4 } from './Section_4';
+import { Section_5 } from './Section_5';
 
 function App() {
   return (
@@ -11,7 +15,12 @@ function App() {
       <div className='whitebox'></div> {/* used as filter for background of section 1 */}
       <Search_section />
       <Section_2/>
-
+      <div className='view_all'> view all </div>
+      <Companies/>
+      <Section_3/>
+      <Section_4/>
+      <Section_5/>
+      <div className='foot'> &copy; Copyright 2024 </div>
     </div>
   );
 }

@@ -1,5 +1,9 @@
 import filterImg from "./images/filter.svg";
 import {Card} from "./Card";
+import phoneMob_1 from "./images/phone_1.png";
+import phoneMob_2 from "./images/phone_2.png";
+import phoneMob_3 from "./images/phone_3.png";
+import phoneMob_4 from "./images/phone_4.png";
 
 export const Section_2 = ()=>{
 
@@ -74,7 +78,10 @@ export const Section_2 = ()=>{
 
       <div className='card_area'>
 
-        <Card/>
+        <Card image={phoneMob_1}/>
+        <Card image={phoneMob_2}/>
+        <Card image={phoneMob_3}/>
+        <Card image={phoneMob_4}/>
 
       </div>
 
