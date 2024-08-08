@@ -31,7 +31,7 @@ export const Section_3 = ()=>{
                         <p>gywusj dgeywujs yueiwjsd ui</p>
                         <p>gywusj dgeywujs yueiwjsd ui</p>
                     </div>
-                    <div>
+                    <div className="second_info">
                         <h1>title lorem redjh cins</h1>
                         <p>gywusj dgeywujs yueiwjsd ui</p>
                         <p>gywusj dgeywujs yueiwjsd ui</p>
